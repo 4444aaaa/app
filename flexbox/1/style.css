@@ -1,0 +1,31 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    column-gap: 10px;
+}
+
+.box {
+    width: 100px;
+    height: 25px;
+    font-family: "Inconsolata";
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.box1 {
+    background-color: aliceblue;
+}
+.box2 {
+    background-color: rgb(158, 16, 122);
+}
+.box3 {
+    background-color: rgb(209, 221, 41);
+}
+.box4 {
+    background-color: rgb(27, 201, 143);
+}
+
+.start-item {
+    margin-right: auto;
+}

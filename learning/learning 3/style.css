@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata";
+    color: white;
+    box-sizing: border-box;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: blueviolet;
+}
+
+.topic-container {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    column-gap: 1px;
+    margin: 10px;
+}
+
+/* .uni-courses {
+    margin-bottom: 300px;
+} */
+
+.topic-box {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    padding-left: 3px;              /* next app */
+}
+
+
+.topic-title {
+    margin: 0;
+    padding: 5px;
+    line-height: 1rem;
+    font: 0.8em "Inconsolata";
+    font-weight: 800;
+}
+
+
+.gold {
+    background-color: orange;
+}
+
+.gold:hover {
+    background-color: rgb(255, 186, 58);
+}
+
+.purple {
+    background-color: purple;
+}
+
+.purple:hover {
+    background-color: rgb(182, 57, 182);
+}
+
+.blue {
+    background-color: rgb(12, 129, 168);
+}
+
+.blue:hover {
+    background-color: rgb(92, 182, 228);
+}
+
+.note-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+    box-sizing: border-box;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.note-box {
+    width: 200px;
+    height: 200px;
+}
+
+.note-description {
+    padding: 10px;
+}
+
+
+.green {
+    background-color: green;
+}
+
+
+/* Home page */
+
+.note-container-home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.task-box {
+    height: 300px;
+    width: 300px;
+    background-color: green;
+    padding: 10px;
+    overflow: scroll;
+}
+
+.thought {
+    background-color: rgb(117, 61, 141);
+}
+
+.task-title {
+    text-align: center;
+    font-weight: 400;
+}
+
+.bad {
+    background-color: rgb(141, 1, 1);
+}
+
+.golden {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

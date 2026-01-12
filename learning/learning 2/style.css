@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inconsolata", monospace;
+}
+
+html {
+    background-color: rgb(235, 235, 235);
+}
+
+/* base / global elements */
+
+a {
+    text-decoration: none;
+}
+
+a:visited, a:link {
+    color: white;
+    font-weight: 700;
+}
+
+h2 {
+    display: inline;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+/* Layout */
+
+#app-title {
+    color: black;
+}
+
+.container {
+    /* border: 0.5px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    font-size: 1.3em;
+    font-weight: 500;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    color: black;
+    box-sizing: border-box;
+
+}
+
+.topic-box {
+    width: 150px;
+    height: 150px;
+    font-size: 1.3em;
+    font-family: "Inconsolata";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 900;
+    box-sizing: border-box;
+}
+
+.task-box {
+    padding-top: 5px;
+    height: 150px;
+    width: 150px;
+    overflow: scroll;
+}
+
+
+.exercise {
+    background-color: darkcyan;
+}
+
+.room {
+    background-color: darkgoldenrod;
+}
+
+.dental {
+    background-color: darkgray;
+}
+
+.leagueoflegends {
+    background-color: darkgreen;
+}
+
+.technique {
+    background-color: darkkhaki;
+}
+
+.music {
+    background-color: darkmagenta;
+}
+
+.box7 {
+    background-color: darkolivegreen;
+}
+
+.box8 {
+    background-color: darkorange;
+}
+
+.box9 {
+    background-color: darkred;
+}
+
+.box10 {
+    background-color: darksalmon;
+}
+
+.box11 {
+    background-color: darkseagreen;
+}
+
+.box12 {
+    background-color: darkslateblue;
+}
+.box13 {
+    background-color: darkslategray;
+}
+
+.box14 {
+    background-color: darkturquoise;
+}
+
+.box15 {
+    background-color: darkviolet;
+}
+
+.box16 {
+    background-color: lightpink;
+}
+.box17 {
+    background-color: rgb(59, 187, 116);
+} 
+.box18 {
+    background-color: #EFBF04;
+}
+
+.box19 {
+    background-color: rgb(88, 19, 153);
+}
+
+.box20 {
+    background-color: rgb(224, 192, 12);
+}
+.box21 {
+    background-color: rgb(16, 85, 131);
+}
+
+.box22 {
+    background-color: rgb(235, 125, 125);
+}
+.box23 {
+    background-color: rgb(18, 95, 53);
+}
+.box24 {
+    background-color: rgb(240, 99, 99);
+}
+
+.box25 {
+    background-color: #EFBF04;
+}
+.box26 {
+    background-color: #EFBF04;
+}
+.box27 {
+    background-color: #EFBF04;
+}
+/* 
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: rgb(118, 253, 201); /* changes the checkmark color */
+/* } */ 
+
+h1 {
+    text-align: center;
+    margin: 20px auto;
+    font-weight: 300;
+    font-family: 'Inconsolata';
+}
+
+.task-box {
+    background-color: rgb(255, 48, 48);
+    
+}
+
+.task-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.task-description, .note-description {
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.3rem;
+    padding-left: 3px;
+}
+
+/* note box styling */
+
+.note-box {
+    background-color: rgb(34, 129, 34);
+    height: 250px;
+    width: 250px;
+    padding: 5px;
+
+}
+
+.note-container {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2em;
+    row-gap: 2em;
+}
+
+.note-description {
+    font-size: 1.1rem;
+}

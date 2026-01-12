@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+    box-sizing: border-box;
+}
+
+/* h2, p  */
+
+.task-title, .task-description {
+    font-family: "Inconsolata";
+    font-weight: 400;
+}
+
+html {
+    background-color: rgb(19, 19, 19);
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: blueviolet;
+}
+
+
+/* .uni-courses {
+    margin-bottom: 300px;
+} */
+
+.topic-box {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    padding-left: 3px;              /* next app */
+}
+
+
+/* .topic-title {
+    margin: 0;
+    padding: 5px;
+    line-height: 1rem;
+    font: 0.8em "Inconsolata";
+    font-weight: 800;
+} */
+
+
+
+.note-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+    box-sizing: border-box;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.note-box {
+    width: 200px;
+    height: 200px;
+}
+
+.note-description {
+    padding: 10px;
+}
+
+
+.green {
+    background-color: green;
+}
+
+
+/* Home page */
+
+
+.button-container {
+    display: flex;
+    margin: 50px 200px;
+    column-gap: 10px;
+}
+
+.button {
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 80px;
+    height: 80px;
+    font-family: "Inconsolata";
+    padding: 10px;
+}
+
+
+/* .uni-courses {
+    column-gap: 5px;
+}
+
+.uni-courses a:hover {
+    background-color: rgb(197, 197, 197);
+}
+
+
+.uni-courses h2 {
+    color: black;
+    font-weight: 500;
+}
+
+.uni-courses .topic-box {
+    border: 1px solid black;
+} */
+
+.note-container-home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 200px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.task-box {
+    height: 250px;
+    width: 250px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
+}
+/* banners  */
+
+.banner {
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.bad {
+    background-color: darkred;
+}
+.thought {
+    background-color: purple;
+}
+.great {
+    background-color: darkgreen;
+
+}
+
+.golden {
+    background-color: rgb(201, 124, 10);
+}
+
+
+/* task box contents */
+
+.task-title {
+    font-size: 16px;
+}
+
+.golden .task-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    animation: h2ColorShift 12s ease-in-out infinite;
+}
+.task-description {
+    margin: 20px 0px;
+}
+
+
+/* animation */
+
+.golden {
+  background: linear-gradient(
+    120deg,
+    #fff3b0, /* very light gold */
+    #ffd966, /* light gold */
+    #f4c430, /* classic gold */
+    #d4af37, /* rich gold */
+    #a67c00  /* dark gold */
+  );
+  background-size: 400% 400%;
+  animation: goldShift 8s ease-in-out infinite;
+}
+
+@keyframes goldShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes h2ColorShift {
+  0%   { color: #4a3b1f; } /* light warm brown */
+  25%  { color: #3f341c; } /* soft charcoal brown */
+  50%  { color: #2e2616; } /* deep bronze-charcoal */
+  75%  { color: #1f1a10; } /* near-black warm */
+  100% { color: #4a3b1f; } /* loop back to first */
+}
