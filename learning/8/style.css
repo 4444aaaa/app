@@ -190,6 +190,13 @@ a:hover {
     background-color: #1f99db;
 }
 
+.good-thought {
+    background: linear-gradient(
+        to bottom, 
+        purple 0% 85%, 
+        darkgreen 85% 100%);
+}
+
 .js {
     background-color: var(--js);
 }
