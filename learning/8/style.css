@@ -5,7 +5,8 @@
 /*                                                                               */
 
 :root {
-    --bad: darkred; 
+    --bad: darkred;
+    --js:  #f7e018;
 }
 
 * {
@@ -18,7 +19,7 @@
 /* h2, p  */
 
 .task-title, .task-description {
-    font-family: "Inconsolata";
+    font-family: "Inconsolata", monospace;
     font-weight: 400;
 }
 
@@ -94,7 +95,8 @@ a:hover {
 
 .button-container {
     display: flex;
-    margin: 50px 200px 20px 200px;
+    width: 1040px;
+    margin: 50px auto 20px auto;
     column-gap: 10px;
 }
 
@@ -130,23 +132,6 @@ a:hover {
 }
 
 
-/* .uni-courses {
-    column-gap: 5px;
-}
-
-.uni-courses a:hover {
-    background-color: rgb(197, 197, 197);
-}
-
-
-.uni-courses h2 {
-    color: black;
-    font-weight: 500;
-}
-
-.uni-courses .topic-box {
-    border: 1px solid black;
-} */
 
 .note-container-home {
     display: flex;
@@ -156,7 +141,8 @@ a:hover {
 .task-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 200px;
+    width: 1040px;
+    margin: 100px auto;
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -164,39 +150,79 @@ a:hover {
 .task-box {
     height: 250px;
     width: 250px;
-    overflow: scroll;
+    overflow: auto;
     display: flex;
     flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
     box-shadow: 0 4px 5px rgba(0,0,0,0.5);
 }
-/* banners  */
 
-.banner {
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: white;
-}
 
 .bad {
     background-color: darkred;
 }
+
+.very-bad {
+    background: linear-gradient(
+        120deg,
+        #ffb0b0, /* very light gold */
+        #ff6666, /* light gold */
+        #f43030, /* classic gold */
+        #d43737, /* rich gold */
+        #a60000  /* dark gold */
+        );
+        background-size: 400% 400%;
+        animation: goldShift 8s ease-in-out infinite;    
+}
+
 .thought {
     background-color: purple;
 }
 .great {
     background-color: darkgreen;
-    
 }
-
 .golden {
     background-color: rgb(201, 124, 10);
 }
 
+.resolution {
+    background-color: #1f99db;
+}
+
+.js {
+    background-color: var(--js);
+}
+
+.js .task-title {
+    color: black;
+}
+
+.goal {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    yellow 0% 5%,
+    black 5% 6%,
+    yellow 6% 11%,
+    black 11% 12%,
+    yellow 12% 22%,
+    black 22% 23%,
+    rgb(253, 107, 107) 23% 33%,
+    black 33% 34%,
+    rgb(253, 107, 107) 34% 44%,
+    black 44% 45%,
+    rgb(70, 198, 248) 45% 55%,
+    black 55% 56%,
+    rgb(70, 198, 248) 56% 66%,
+    black 66% 67%
+  );
+}
+
+.goal .task-title {
+    text-shadow: 0 0 4px rgba(0,0,0,1);
+}
 
 /* task box contents */
 
