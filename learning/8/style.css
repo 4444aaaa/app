@@ -8,18 +8,32 @@
     --bad: darkred;
     --js:  #f7e018;
 }
+/*                                                                               */
+/*                                                                               */
+/*                                 R E S E T / B A S E                           */
+/*                                                                               */
+/*                                                                               */
 
 * {
     margin: 0;
     padding: 0;
-    color: white;
     box-sizing: border-box;
+}
+
+/*                                                                               */
+/*                                                                               */
+/*                                 F O N T S                                     */
+/*                                                                               */
+/*                                                                               */
+
+body {
+    font-family: "Inconsolata", monospace;
+    color: white;
 }
 
 /* h2, p  */
 
 .task-title, .task-description {
-    font-family: "Inconsolata", monospace;
     font-weight: 400;
 }
 
@@ -124,9 +138,6 @@ a:hover {
     align-items: center;
 }
 
-.toggle-content {
-}
-
 .hidden {
     display: none;
 }
@@ -152,6 +163,8 @@ a:hover {
     width: 250px;
     overflow: auto;
     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid black;
     padding: 10px;
@@ -195,6 +208,12 @@ a:hover {
         to bottom, 
         purple 0% 85%, 
         darkgreen 85% 100%);
+}
+.great-golden {
+    background: linear-gradient(
+        to bottom, 
+        darkgreen 0% 85%, 
+        gold 85% 100%);
 }
 
 .js {
