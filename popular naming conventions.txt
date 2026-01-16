@@ -1,0 +1,24 @@
+popular naming conventions
+declared
+initialized
+anki
+truthy
+falsy
+make an example of making a comment 'better'
+they're fast to implement: what is an example of a slow implementation for code testing / debugging
+
+common names for comment markers: markers symbols slashes block markers hash/sharp
+
+
+use different js files for each quest, not the same one
+
+it would be nice to integrate this JS ui into my app
+	- css styling gotta be on point
+
+------
+
+i can create 5 spells for comments rn but
+it will take a long fucking time to create the spell icons for them
+
+---
+

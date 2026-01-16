@@ -1,0 +1,356 @@
+/*                                                                               */
+/*                                                                               */
+/*                                 V A R I A B L E S                             */
+/*                                                                               */
+/*                                                                               */
+
+:root {
+    --bad: darkred;
+    --js:  #f7e018;
+}
+/*                                                                               */
+/*                                                                               */
+/*                                 R E S E T / B A S E                           */
+/*                                                                               */
+/*                                                                               */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*                                                                               */
+/*                                                                               */
+/*                                 F O N T S                                     */
+/*                                                                               */
+/*                                                                               */
+
+body {
+    font-family: "Inconsolata", monospace;
+    color: white;
+}
+
+/* h2, p  */
+
+.task-title, .task-description {
+    font-weight: 400;
+}
+
+html {
+    background-color: rgb(19, 19, 19);
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: blueviolet;
+}
+
+
+/* .uni-courses {
+    margin-bottom: 300px;
+} */
+
+.topic-box {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    align-items: end;
+    padding-bottom: 5px;
+    padding-left: 3px;              /* next app */
+}
+
+
+/* .topic-title {
+    margin: 0;
+    padding: 5px;
+    line-height: 1rem;
+    font: 0.8em "Inconsolata";
+    font-weight: 800;
+} */
+
+
+
+.note-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 10px;
+    box-sizing: border-box;
+    column-gap: 1px;
+    row-gap: 1px;
+}
+
+.note-box {
+    width: 200px;
+    height: 200px;
+}
+
+.note-description {
+    padding: 10px;
+}
+
+
+.green {
+    background-color: green;
+}
+
+
+/*                                                                               */
+/*                                                                               */
+/*                                 B U T T O N S                                 */
+/*                                                                               */
+/*                                                                               */
+
+
+
+.button-container {
+    display: flex;
+    width: 1040px;
+    margin: 50px auto 20px auto;
+    column-gap: 10px;
+}
+
+.button {
+    color: white;
+    background-color: white;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    font-family: "Inconsolata";
+
+    
+}
+
+.eye {
+    color: rgba(0,0,0,0.5);
+}
+
+
+.toggle-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.note-container-home {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1040px;
+    margin: 100px auto;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.task-box {
+    height: 250px;
+    width: 250px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    padding: 10px;
+    box-shadow: 0 4px 5px rgba(0,0,0,0.5);
+}
+
+
+.bad {
+    background-color: darkred;
+}
+
+.very-bad {
+    background: linear-gradient(
+        120deg,
+        #ffb0b0, /* very light gold */
+        #ff6666, /* light gold */
+        #f43030, /* classic gold */
+        #d43737, /* rich gold */
+        #a60000  /* dark gold */
+        );
+        background-size: 400% 400%;
+        animation: goldShift 8s ease-in-out infinite;    
+}
+
+.thought {
+    background-color: purple;
+}
+.great {
+    background-color: darkgreen;
+}
+.golden {
+    background-color: rgb(201, 124, 10);
+}
+
+.resolution {
+    background-color: #1f99db;
+}
+
+.good-thought {
+    background: linear-gradient(
+        to bottom, 
+        purple 0% 85%, 
+        darkgreen 85% 100%);
+}
+.great-golden {
+    background: linear-gradient(
+        to bottom, 
+        darkgreen 0% 85%, 
+        gold 85% 100%);
+}
+
+.bad-thought {
+    background: linear-gradient(
+        to bottom, 
+        purple 0% 85%, 
+        darkred 85% 100%);
+}
+
+.to-do {
+    background-color: khaki;
+}
+
+.to-do .task-title {
+    color: black;
+}
+
+.js {
+    background-color: var(--js);
+}
+
+.js .task-title {
+    color: black;
+}
+
+.problem-solution {
+    background: linear-gradient(
+        to bottom, 
+        rgb(56, 0, 0) 0% 85%, 
+        rgb(255, 196, 2) 85% 100%);
+    backdrop-filter: blur(10px);
+}
+
+.goal {
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(
+    circle,
+    yellow 0% 5%,
+    black 5% 6%,
+    yellow 6% 11%,
+    black 11% 12%,
+    yellow 12% 22%,
+    black 22% 23%,
+    rgb(253, 107, 107) 23% 33%,
+    black 33% 34%,
+    rgb(253, 107, 107) 34% 44%,
+    black 44% 45%,
+    rgb(70, 198, 248) 45% 55%,
+    black 55% 56%,
+    rgb(70, 198, 248) 56% 66%,
+    black 66% 67%
+  );
+}
+
+.goal .task-title {
+    text-shadow: 0 0 4px rgba(0,0,0,1);
+}
+
+/* task box contents */
+
+.task-title {
+    font-size: 16px;
+}
+
+.golden .task-title {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    animation: h2ColorShift 12s ease-in-out infinite;
+}
+
+.golden .link-container {
+    color: black;
+}
+
+.task-description {
+    margin: 20px 0px;
+}
+
+/*                                                                               */
+/*                                                                               */
+/*                                 T E X T I N P U T                             */
+/*                                                                               */
+/*                                                                               */
+
+.text-input {
+    width: 500px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50px;
+    transition: background-color 0.3s ease, height 0.3s ease;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+
+    
+}
+
+.text-input:hover {
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+/* animation */
+
+.golden {
+    background: linear-gradient(
+        120deg,
+        #fff3b0, /* very light gold */
+        #ffd966, /* light gold */
+        #f4c430, /* classic gold */
+        #d4af37, /* rich gold */
+        #a67c00  /* dark gold */
+        );
+        background-size: 400% 400%;
+        animation: goldShift 8s ease-in-out infinite;
+}
+
+@keyframes goldShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes h2ColorShift {
+  0%   { color: #4a3b1f; } /* light warm brown */
+  25%  { color: #3f341c; } /* soft charcoal brown */
+  50%  { color: #2e2616; } /* deep bronze-charcoal */
+  75%  { color: #1f1a10; } /* near-black warm */
+  100% { color: #4a3b1f; } /* loop back to first */
+}
